@@ -23,6 +23,7 @@ def dlvideo():
         print("Invalid")
     
 customtkinter.set_appearance_mode("System")
+#grey = #53565c
 customtkinter.set_default_color_theme("green")
 
 #app frame
@@ -40,9 +41,10 @@ link = customtkinter.CTkEntry(app, width=350, height=40,textvariable=url_var)
 link.pack()
 
 #download
-dl = customtkinter.CTkButton(app, text='Download Audio', command=dlaudio)
+dl = customtkinter.CTkButton(app, text='Download Audio', fg_color="#47484a", hover_color = "#2a4782", command=dlaudio)
 dl.pack(padx=10, pady=10)
-dl = customtkinter.CTkButton(app, text='Download Video', command=dlvideo)
+dl = customtkinter.CTkButton(app, text='Download Video', fg_color="#47484a", hover_color = "#2a4782", command=dlvideo)
 dl.pack(padx=10, pady=10)
+
 #runs app
 app.mainloop()
